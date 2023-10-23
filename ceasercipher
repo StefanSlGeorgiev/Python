@@ -1,0 +1,22 @@
+#Work in progress for Ceaser cipher encryption
+
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import sys
+
+def CeaserCipher(string, key):
+    result = ""
+    for i in range(len(string)):
+        char = string[i]
+        print(char)
+       # result += chr((ord(char) + key - 65) % 26 + 65)
+        
+    return result
+
+    
+ 
+string = sys.argv[1:]
+#key = sys.argv[1:2]
+
+print(CeaserCipher(string,5))
